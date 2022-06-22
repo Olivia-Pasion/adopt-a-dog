@@ -6,6 +6,7 @@ export default function createPetList(root) {
         root.innerHTML = '';
 
         for (const dog of dogs) {
+            console.log(dog);
             const li = DogCard({ dog });
             root.append(li);
         }
@@ -23,7 +24,7 @@ export function DogCard({ dog }) {
     p.textContent = dog.name;
     img.src = `./assets/dogs/${dog.breed}.jpeg`;
     a.href = `./detail/?id=${dog.id}`; // *** link to the dog detail passing the id as a query param
-
+    
     a.append(p, img);
 
     li.append(a);
