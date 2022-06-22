@@ -14,7 +14,7 @@ async function handlePageLoad() {
     const params = new URLSearchParams(window.location.search);
 
     const id = params.get('id');
-    console.log(id);
+    
     if (!id) {window.location = '/';}
 
     // *** Use the id to get this dog (async, so you need to "await"!)
