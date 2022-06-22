@@ -15,7 +15,7 @@ async function handlePageLoad() {
 
     const id = params.get('id');
 
-    if (!id) window.location = '/';
+    if (!id) {window.location = '/';}
 
     // *** Use the id to get this dog (async, so you need to "await"!)
     // and assign to "dog" variable
